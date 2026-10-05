@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WK Clan | کلن WK</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:Tahoma,Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#080808;
+    color:white;
+    line-height:1.8;
+}
+
+/* Header */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#090909;
+    border-bottom:2px solid #e00000;
+    padding:15px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#ff1515;
+}
+
+.logo span{
+    color:#ffd000;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd000;
+}
+
+/* Hero */
+
+.hero{
+    min-height:88vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:30px 20px;
+
+    background:
+    radial-gradient(circle,#450000 0%,#160000 35%,#080808 70%);
+}
+
+.hero h1{
+    font-size:clamp(80px,18vw,180px);
+    color:#ff1515;
+
+    text-shadow:
+    0 0 15px #ff0000,
+    0 0 50px #700000;
+}
+
+.hero h2{
+    color:#ffd000;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#ccc;
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:13px 28px;
+    background:#e00000;
+    border:2px solid #ff3333;
+    border-radius:8px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#ffd000;
+    color:black;
+}
+
+/* Sections */
+
+section{
+    padding:75px 7%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title h2{
+    color:#ff2020;
+    font-size:35px;
+}
+
+.title p{
+    color:#999;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#111;
+    border:1px solid #3b1010;
+    border-right:4px solid #e00000;
+    border-radius:12px;
+    padding:25px;
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#ff2020;
+    box-shadow:0 10px 30px #330000;
+}
+
+.card h3{
+    color:#ffd000;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#bbb;
+}
+
+/* Stats */
+
+.stats{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(170px,1fr));
+    gap:20px;
+}
+
+.stat{
+    background:#111;
+    border:1px solid #3b1010;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+}
+
+.stat strong{
+    display:block;
+    font-size:40px;
+    color:#ffd000;
+}
+
+.stat span{
+    color:#aaa;
+}
+
+/* Members */
+
+.member{
+    text-align:center;
+}
+
+.avatar{
+    width:80px;
+    height:80px;
+    margin:auto;
+    margin-bottom:15px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+    background:#e00000;
+    border:3px solid #ffd000;
+
+    font-size:28px;
+    font-weight:bold;
+}
+
+.role{
+    color:#ff3030;
+}
+
+/* Rules */
+
+.rules{
+    max-width:850px;
+    margin:auto;
+}
+
+.rules li{
+    list-style:none;
+    background:#111;
+    border-right:4px solid #e00000;
+    padding:14px 18px;
+    margin-bottom:12px;
+    border-radius:6px;
+}
+
+/* Announcement */
+
+.announcement{
+    max-width:850px;
+    margin:auto;
+    padding:30px;
+    text-align:center;
+
+    background:
+    linear-gradient(90deg,#260000,#111);
+
+    border:1px solid #e00000;
+    border-radius:12px;
+}
+
+.announcement h3{
+    color:#ffd000;
+    margin-bottom:10px;
+}
+
+/* Footer */
+
+footer{
+    background:#050505;
+    border-top:2px solid #e00000;
+    text-align:center;
+    padding:30px;
+    color:#777;
+}
+
+footer strong{
+    color:#ff2020;
+}
+
+/* Mobile */
+
+@media(max-width:700px){
+
+    header{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav{
+        justify-content:center;
+        gap:12px;
+    }
+
+    nav a{
+        font-size:13px;
+    }
+
+    .hero h2{
+        font-size:21px;
+    }
+
+    section{
+        padding:55px 5%;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
